@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -126,7 +127,7 @@ st.markdown(f"""
 # ── Load data ────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("streamlit\data_final.csv")
+    df = pd.read_csv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data_final.csv"))
     return df
 
 df = load_data()
