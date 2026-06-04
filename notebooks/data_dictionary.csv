@@ -1,0 +1,15 @@
+No,Kolom,Tipe Data,Deskripsi,Contoh Nilai
+1,Title,str,Nama resep asli dari platform Cookpad.,Ayam Woku Manado
+2,Ingredients,str,"Daftar bahan resep sebelum preprocessing, format string list Python.",1 Ekor Ayam Kampung (potong 12)--2 Buah Jeruk Nipis--2 Sdm G
+3,Steps,str,Langkah-langkah memasak dalam format string.,1) Cuci bersih ayam dan tiriskan. Lalu peras jeruk nipis (ka
+4,Loves,int64,Jumlah pengguna yang menyukai (loves) resep tersebut.,1
+5,URL,str,URL resep asli di platform Cookpad.,https://cookpad.com/id/resep/4473027-ayam-woku-manado
+6,Category,str,"Kategori utama bahan protein resep (ayam, sapi, ikan, udang, tempe, tahu, telur, kambing).",ayam
+7,Title Cleaned,str,"Judul resep setelah preprocessing (lowercase, hapus karakter khusus).",ayam woku manado
+8,Total Ingredients,int64,"Jumlah bahan dalam resep, dihitung setelah parsing kolom Ingredients.",14
+9,Ingredients Cleaned,str,"Daftar bahan setelah preprocessing: tokenisasi, normalisasi, hapus stopword.","['ekor ayam', 'jeruk nipis', 'garam', 'kunyit', 'bawang mera"
+10,Total Steps,int64,"Jumlah langkah memasak, dihitung dari kolom Steps.",7
+11,Ingredients Final,str,Daftar bahan preprocessing akhir dalam format list string untuk sistem rekomendasi.,"['ayam', 'jeruk_nipis', 'garam', 'kunyit', 'bawang_merah', '"
+12,Ingredients Join,str,Seluruh bahan dibersihkan dan digabung menjadi satu string untuk TF-IDF.,ayam jeruk_nipis garam kunyit bawang_merah bawang_putih caba
+13,Popularity,category,-,1-5
+14,ingredient_length,int64,-,11
