@@ -126,7 +126,7 @@ st.markdown(f"""
 # ── Load data ────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("capstone-resep\streamlit\data_final.csv")
+    df = pd.read_csv("streamlit\data_final.csv")
     return df
 
 df = load_data()
